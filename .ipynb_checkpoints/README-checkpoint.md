@@ -3,7 +3,9 @@ This repo contains the code and logs for the Starfire project.
 
 
 ## Logs
-## Aug 17:
+## Aug 19:
+- Create `notebooks/refinitiv_mna_deals_2.ipynb`. Gets stock market responses from refinitiv via API for firms in deals set.
+- Loops too low over deals. Any other solution? Also, I got some error that could not figure out and code stopped running. 
 
 ### Aug 16:
 - Goal: Create data set with as many deals with both price and stock market reaction, and linked to PB data. The idea is to get all deals and then a subset of startups that are present in PB.
@@ -24,7 +26,7 @@ This repo contains the code and logs for the Starfire project.
 - Updated `notebooks/pitchbook_wrds_to_bq.ipynb`. Update PB data on BigQuery.
 - Created `notebooks/01_motivation`. Analyzes startup activity (founding, investment) over time.
 
-Thoughts:
+## Thoughts:
 -  Run unsupervised analysis with the stock market responses, see how the data gets partioned.
 - Create science orientation measure. As per converstaion w/ Jay, there's no paper that discusses this isseue thoroughly.
 - Consider using Marx's founding startup data
