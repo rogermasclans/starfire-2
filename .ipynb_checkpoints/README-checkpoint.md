@@ -6,6 +6,7 @@ This repo contains the code and logs for the Starfire project.
 ## Aug 19:
 - Create `notebooks/refinitiv_mna_deals_2.ipynb`. Gets stock market responses from refinitiv via API for firms in deals set.
 - Loops too low over deals. Any other solution? Also, I got some error that could not figure out and code stopped running. 
+- Wasted my time figuring out what indices to benchmark stock responses. found this data https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes
 
 ### Aug 16:
 - Goal: Create data set with as many deals with both price and stock market reaction, and linked to PB data. The idea is to get all deals and then a subset of startups that are present in PB.
@@ -39,23 +40,19 @@ This repo contains the code and logs for the Starfire project.
 
 ## Data flow
 1. Download all deals from refinitiv: 
-    1.1 `code.py`
-    1.2 `dataset.data`
+    - 1.1 `code.py`
+    - 1.2 `dataset.data`
     
-2. Get stock market response for acquirors from refintiv:
-    2.1 `code.py`
-    2.2 `dataset.data`
+2. Get stock market data for acquirors from refintiv:
+    - 2.1 `code.py`
+    - 2.2 `dataset.data`
     
-3. Get benchmark response for acquirors from refinitiv:  
-    3.1 `code.py`
-    3.2 `dataset.data`
+3. Compute private value of acquisition for acquiror with different time windows:
+    - 4.1 `code.py`
+    - 4.2 `dataset.data`
     
-4. Compute private value of acquisition for acquiror with different time windows:
-    4.1 `code.py`
-    4.2 `dataset.data`
+4. Merge private value data to deals dataset:
+    - 4.1 `code.py`
+    - 4.2 `dataset.data`
     
-5. Merge private value data to deals dataset:
-    5.1 `code.py`
-    5.2 `dataset.data`
-    
-6. Merge refinitiv data to PB
+5. Merge refinitiv data to PB
