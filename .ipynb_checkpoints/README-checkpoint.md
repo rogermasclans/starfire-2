@@ -36,3 +36,26 @@ This repo contains the code and logs for the Starfire project.
 - What is thus a good way to measure what I want to measure. What is it that I want to measure? Scienceness? Deep tech? Tech risk? Market risk?
 - I need to rigorously show a decline over time of funding towards the startups I want to study. The question is why. The rest I can do with the litearture. For example, I know only a small fraction of startups patent, but I now from Nanda, Lerner, Marx, Ewens, etc. that these startups are so relevant. So I can rely on these cites. What I need to show is the trend over time. And some relationship.
 - The question is should I think first on scienceness or re-run stock market response? Is there any other way to compute value capture?
+
+## Data flow
+1. Download all deals from refinitiv: 
+    1.1 `code.py`
+    1.2 `dataset.data`
+    
+2. Get stock market response for acquirors from refintiv:
+    2.1 `code.py`
+    2.2 `dataset.data`
+    
+3. Get benchmark response for acquirors from refinitiv:  
+    3.1 `code.py`
+    3.2 `dataset.data`
+    
+4. Compute private value of acquisition for acquiror with different time windows:
+    4.1 `code.py`
+    4.2 `dataset.data`
+    
+5. Merge private value data to deals dataset:
+    5.1 `code.py`
+    5.2 `dataset.data`
+    
+6. Merge refinitiv data to PB
