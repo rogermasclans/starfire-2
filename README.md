@@ -3,11 +3,16 @@ This repo contains the code and logs for the Starfire project.
 
 
 ## Logs
-## Aug 19:
+### Aug 22:
+- Clean up code, split into data_1, data_2, etc. Miscelania left on `refinitiv_api.ipynb`
+- Added stock index prices to stock market reactions dataset
+- Computed response variables to then merge to main deals data
+
+### Aug 19:
 - Create `notebooks/refinitiv_mna_deals_2.ipynb`. Gets stock market responses from refinitiv via API for firms in deals set.
 - Loops too low over deals. Any other solution? Also, I got some error that could not figure out and code stopped running. 
 - Wasted my time figuring out what indices to benchmark stock responses. found these data https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes
-- Download index price data from wrds compustat, upload to bigquery.
+- Download index price data from wrds compustat, upload to bigquery. Code: `data2.1_compu_stock_index.ipynb`
 
 ### Aug 16:
 - Goal: Create data set with as many deals with both price and stock market reaction, and linked to PB data. The idea is to get all deals and then a subset of startups that are present in PB.
