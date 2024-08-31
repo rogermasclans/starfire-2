@@ -3,6 +3,9 @@ This repo contains the code and logs for the Starfire project.
 
 
 ## Logs
+### Aug 26:
+- Get data for all periods. Should I filter on deal type or some other stuff to make it faster? 
+
 ### Aug 22:
 - Clean up code, split into data_1, data_2, etc. Miscelania left on `refinitiv_api.ipynb`
 - Added stock index prices to stock market reactions dataset
