@@ -3,6 +3,20 @@ This repo contains the code and logs for the Starfire project.
 
 
 ## Logs
+
+### Sep 4:
+- Stock price retrieval is now working. Clean up notebooks:
+    - 1.1_create_refi_deals: retrieves all deals from refinitiv
+    - 2.1_retrieve_compu_stock_prc_for_pb_deals: retrieves stock prices via cik from compustat for PB deals 
+    - 2.2_retrieve_compu_stock_prc_for_refi_deals: retrieves stock prices via cik from compustat for refinitiv deals, using ewens et al. linking data
+    - 2.3_retrieve_refi_stock_index_price: retrieves stock index prices for all relevant, international indeces. Uses refinitiv as it works better than compustat
+    - the rest of notebooks are relegated to 99.
+
+### Sep 3:
+- Retrieving stock price data for all deals via refinitiv is too slow. Let's try to match data to PB first, then start by retrieving only deals on PB. 
+- Matching PB deals with Refinitiv:
+    - 1. Match refi-SCD deals to gvkey via Ewens et al. 
+    - 2. 
 ### Aug 26:
 - Get data for all periods. Should I filter on deal type or some other stuff to make it faster? 
 
